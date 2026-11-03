@@ -1,0 +1,12 @@
+name: Dummy Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: self-hosted
+    steps:
+      - name: Test runner
+        shell: cmd
+        run: echo Hello from my self-hosted runner!
